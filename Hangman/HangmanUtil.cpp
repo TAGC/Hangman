@@ -9,7 +9,7 @@ void readFile(string filename, LinkedList* stringList)
 	{
 		getline(infile, input);
 		stringList->addValue(input);
-	}
+	}	
 	infile.close();
 }
 

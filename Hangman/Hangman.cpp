@@ -34,7 +34,7 @@ bool Hangman::checkGameOver()const
 	{
 		printHangman();
 		cout << "Unlucky, you lost this round. ";
-		cout << "The word was " << hiddenWord << endl;
+		cout << "The word was \"" << hiddenWord << "\".\n";
 		return true;
 	}
 	
@@ -46,6 +46,7 @@ bool Hangman::checkGameOver()const
 		}
 	}
 
+	cout << "\"" << hiddenWord << "\"\n";
 	cout << "Congratulations, you win!\n";
 	return true;
 }
@@ -69,7 +70,7 @@ void Hangman::guessLetter(char letter)
 
 	if(isLetterGuessed(letter))
 	{
-		cout << letter << " has already been guessed.\n";
+		cout << letter << " has already been guessed.\n\n";
 		return;
 	}
 
@@ -84,7 +85,7 @@ void Hangman::guessLetter(char letter)
 		
 		if(chancesLeft > 0)
 		{
-			cout << "You have " << chancesLeft << " chances remaining.\n";
+			cout << "You have " << chancesLeft << " chance(s) remaining.\n";
 		}
 	}
 }
@@ -216,15 +217,31 @@ void Hangman::printWord()const
 	cout << endl;
 }
 
+void Hangman::printGuessedLetters()const
+{
+	cout << "\nGuessed letters: ";
+	for(int i=0; i < 26; i++)
+	{
+		if(isLetterGuessed((char)(ALPHABET_START+i)))
+		{
+			cout << (char)(ALPHABET_START+i) << " ";
+		}
+	}
+
+	cout << endl;
+}
+
 void Hangman::run()
 {
 	char letter;
 
 	chooseHiddenWord();
 	
+	cout << "New game started. Try to guess the word: \n";
 	while(!checkGameOver())
 	{
 		printWord();
+		printGuessedLetters();
 		printHangman();
 
 		do {
