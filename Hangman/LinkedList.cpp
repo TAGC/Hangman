@@ -71,7 +71,6 @@ string LinkedList::getRandomNodeValue()
 	
 	for(int i=0; i < listIndex; i++)
 	{
-		//cout << "Current node address: " << current << endl;
 		nextNode();
 	}
 

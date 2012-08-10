@@ -27,7 +27,6 @@ void Hangman::getLettersGuessed(bool out[26])const
 	}
 }
 
-// Incomplete.
 bool Hangman::checkGameOver()const
 {
 	if(!chances)
@@ -107,7 +106,6 @@ bool Hangman::letterInHiddenWord(char letter)const
 	return false;
 }
 
-// Incomplete.
 void Hangman::printHangman()const
 {
 	cout << endl;
