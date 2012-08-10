@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hangman", "Hangman\Hangman.vcxproj", "{994CD492-E2D8-4B08-8839-4B7B84636836}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{994CD492-E2D8-4B08-8839-4B7B84636836}.Debug|Win32.ActiveCfg = Debug|Win32
+		{994CD492-E2D8-4B08-8839-4B7B84636836}.Debug|Win32.Build.0 = Debug|Win32
+		{994CD492-E2D8-4B08-8839-4B7B84636836}.Release|Win32.ActiveCfg = Release|Win32
+		{994CD492-E2D8-4B08-8839-4B7B84636836}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
